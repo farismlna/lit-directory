@@ -1,29 +1,23 @@
-# Astro Starter Kit: Minimal
+# 📚 Lit Directory
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+A lightweight, modern web app built with [Astro](https://astro.build) for cataloging and reviewing books. Created as a hands-on learning project to explore Astro's component-driven architecture and performance features.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
 /
-├── public/
+├── public/          # Static assets (images, icons, fonts)
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/  # Reusable Astro/UI components (Navbar, BookCard, etc.)
+│   └── pages/       # File-based routes (e.g., index.astro)
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **`src/pages/`**: Every `.astro` or `.md` file in this directory represents a page route on your site.
+- **`src/components/`**: The ideal place for all your Astro or frontend framework components.
+- **`public/`**: Assets placed here are served directly at the root URL.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
 ## 🧞 Commands
 
@@ -38,6 +32,21 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📋 Features & Roadmap
+
+- [x] Initial project setup and core layout
+- [x] Responsive navigation bar component
+- [ ] Book grid and listing component
+- [ ] Detailed book review pages
+- [ ] Genre and rating filtering system
+
+---
+
+## 📚 Learn More
+
+To learn more about the tools used in this project:
+
+- [Astro Documentation](https://docs.astro.build)
+- [Astro Discord Community](https://astro.build/chat)
