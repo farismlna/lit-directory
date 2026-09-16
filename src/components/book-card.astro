@@ -1,0 +1,47 @@
+---
+const { book } = Astro.props;
+---
+
+<div class="book-card">
+    <h3 class="book-title">{book.title}</h3>
+    <p class="book-author"><strong>Author:</strong> {book.author}</p>
+    <p class="book-genre"><strong>Genre:</strong> {book.genre}</p>
+    <p class="book-description">{book.description}</p>
+    <a href={`review/${book.title.replace(/\s+/g, '-').toLowerCase()}`}>Read Review</a>
+</div>
+
+<style>
+	h2 {
+		padding-right: 10px;
+		border-right: 8px solid #750eeb;
+		border-bottom: 8px solid #750eeb;
+		margin-bottom: 40px;
+		text-align: right;
+	}
+	.book-card {
+		background-color: #f9f6fc;
+		padding: 16px 20px;
+		margin: 20px auto;
+		box-shadow: 8px 8px 0 #ebe5f2;
+	}
+	.book-title {
+		font-size: 1.4em;
+		font-weight: bold;
+		margin: 0;
+	}
+	.book-author {
+		margin-top: 0;
+	}
+
+    a {
+        display: inline-block;
+        background-color: #750eeb;
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 2px;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: #965ee9;
+    }
+</style>

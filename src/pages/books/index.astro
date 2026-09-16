@@ -1,10 +1,56 @@
 ---
-import BaseLayout from '../../layouts/base-layuout.astro';
+import BaseLayout from '../../layouts/base-layout.astro';
+import BookCard from '../../components/book-card.astro';
+
+interface Book {
+    title: string
+    author: string
+    genre: string
+    description: string
+}
+
+const books: Book[] = [
+    {
+        title: 'The Great Gatsby',
+        author: 'F. Scott Fitzgerald',
+        genre: 'Fiction',
+        description: 'A classic American novel set in the Jazz Age.'
+    },
+    {
+        title: 'To Kill a Mockingbird',
+        author: 'Harper Lee',
+        genre: 'Fiction',
+        description: 'A gripping tale of racial injustice and childhood innocence in the American South.'
+    },
+    {
+        title: '1984',
+        author: 'George Orwell',
+        genre: 'Dystopian Fiction',
+        description: 'A dystopian social science fiction novel and cautionary tale.'
+    },
+    {
+        title: 'Pride and Prejudice',
+        author: 'Jane Austen',
+        genre: 'Romance',
+        description: 'A romantic novel of manners set in Georgian England.'
+    },
+    {
+        title: 'The Catcher in the Rye',
+        author: 'J.D. Salinger',
+        genre: 'Fiction',
+        description: 'A story about adolescent alienation and loss of innocence in postwar America.'
+    }
+];
+
 ---
 
 <BaseLayout>
     <div class="content">
         <h2>Our Book Collection</h2>
         <p>Discover a wide range of books across various genres and authors.</p>
+        { books.map(book => <BookCard book={book} />) }
+        { books.length === 0 && 
+            <p>No books available at the moment. Please check back later.</p>
+        }
     </div>
 </BaseLayout>
