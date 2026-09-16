@@ -9,7 +9,8 @@ A lightweight, modern web app built with [Astro](https://astro.build) for catalo
 ├── public/          # Static assets (images, icons, fonts)
 ├── src/
 │   ├── components/  # Reusable Astro/UI components (Navbar, BookCard, etc.)
-│   └── pages/       # File-based routes (e.g., index.astro)
+│   ├── layouts/     # Page layouts and global HTML wrappers (BaseLayout, etc.)
+│   └── pages/       # File-based routes (index.astro, books.astro, etc.)
 └── package.json
 ```
 
