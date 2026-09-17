@@ -9,7 +9,7 @@ A lightweight, modern web app built with [Astro](https://astro.build) for catalo
 ├── public/              # Static assets (images, icons, fonts)
 ├── src/
 │   ├── components/      # Reusable Astro/UI components (Navbar, BookCard, etc.)
-│   ├── content/         # Content Collections data files (JSON book datasets)
+│   ├── content/         # Content Collections data files (Markdown book datasets for each spesific review)
 │   ├── layouts/         # Page layouts and global HTML wrappers (BaseLayout, etc.)
 │   ├── pages/           # File-based routes (index.astro, books.astro, etc.)
 │   └── content.config.ts # Configuration & Zod schema definitions for Content Collections
@@ -43,7 +43,7 @@ All commands are run from the root of the project, from a terminal:
 - [x] Reusable page layouts & components
 - [x] Refactored data store to Astro Content Collections (JSON format)
 - [x] Book listing page rendering collection entries
-- [ ] Transition content collection entries to Markdown/MDX reviews
+- [x] Transition content collection entries to Markdown/MDX reviews
 - [ ] Dynamic individual review detail routes (/books/[id])
 - [ ] Genre and tag filtering system
 
