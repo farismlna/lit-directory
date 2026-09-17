@@ -1,17 +1,16 @@
-import { file } from 'astro/loaders';
-import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { defineCollection } from 'astro:content';
 
 const books = defineCollection({
-    loader: file('src/content/books.json'),
+    loader: glob({base: "src/content/books", pattern: "*.md"}),
     schema: z.object({
-        id: z.number().positive(),
-        title: z.string().max(200),
-        author: z.string().max(200),
-        year: z.number().min(0),
-        genre: z.string().max(100),
-        summary: z.string().max(500),
-        rating: z.number().min(0).max(5)
+        title: z.string(),
+        author: z.string(),
+        year: z.number(),
+        genre: z.string(),
+        summary: z.string(),
+        rating: z.number()
     })
 });
 

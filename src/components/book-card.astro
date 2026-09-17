@@ -11,12 +11,12 @@ const { book } = Astro.props;
 <div class="book-card">
 	<div class="book-header">
 		<h3 class="book-title">{book.data.title} ({book.data.year})</h3>
-		<p class="book-rating">{book.data.rating}/5</p>
+		<p class="book-rating">{book.data.rating}/10</p>
 	</div>
     <p class="book-author"> {book.data.author}</p>
     <p class="book-genre"><strong>Genre:</strong> {book.data.genre}</p>
     <p class="book-summary">{book.data.summary}</p>
-	<a href={`review/${book.data.title.replace(/\s+/g, '-').toLowerCase()}`}>Read Review</a>
+	<a href={`/books/${book.id}`}>Read Review</a>
 </div>
 
 <style>
