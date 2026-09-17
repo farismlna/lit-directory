@@ -39,13 +39,14 @@ All commands are run from the root of the project, from a terminal:
 
 ## 📋 Features & Roadmap
 
-[x] Basic layout & navigation header
-[x] Reusable page layouts & components
-[x] Refactored data store to Astro Content Collections (JSON format)
-[x] Book listing page rendering collection entries
-[ ] Transition content collection entries to Markdown/MDX reviews
-[ ] Dynamic individual review detail routes (/books/[id])
-[ ] Genre and tag filtering system
+- [x] Basic layout & navigation header
+- [x] Reusable page layouts & components
+- [x] Refactored data store to Astro Content Collections (JSON format)
+- [x] Book listing page rendering collection entries
+- [ ] Transition content collection entries to Markdown/MDX reviews
+- [ ] Dynamic individual review detail routes (/books/[id])
+- [ ] Genre and tag filtering system
+
 
 ---
 
