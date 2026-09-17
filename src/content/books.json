@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "year": 1925,
+        "genre": "Novel",
+        "summary": "A story about the mysterious millionaire Jay Gatsby and his obsession with the beautiful Daisy Buchanan.",
+        "rating": 4.5
+    },
+    {
+        "id": 2,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "year": 1960,
+        "genre": "Novel",
+        "summary": "A novel about the serious issues of rape and racial inequality, told through the eyes of young Scout Finch.",
+        "rating": 4.8
+    },
+    {
+        "id": 3,
+        "title": "1984",
+        "author": "George Orwell",
+        "year": 1949,
+        "genre": "Dystopian",
+        "summary": "A chilling depiction of a totalitarian regime that uses surveillance and propaganda to control its citizens.",
+        "rating": 4.7
+    },
+    {
+        "id": 4,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "year": 1813,
+        "genre": "Romance",
+        "summary": "A classic novel that explores the themes of love, reputation, and class in early 19th century England.",
+        "rating": 4.6
+    },
+    {
+        "id": 5,
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "year": 1951,
+        "genre": "Novel",
+        "summary": "A story about the experiences of Holden Caulfield, a teenager who is disillusioned with the adult world.",
+        "rating": 4.3
+    },
+    {
+        "id": 6,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "year": 1937,
+        "genre": "Fantasy",
+        "summary": "A fantasy novel that follows the journey of Bilbo Baggins, a hobbit who embarks on an adventure to win a share of treasure guarded by a dragon.",
+        "rating": 4.8
+    },
+    {
+        "id": 7,
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "year": 1851,
+        "genre": "Adventure",
+        "summary": "A novel about the obsessive quest of Captain Ahab to seek revenge on Moby Dick, a giant white whale.",
+        "rating": 4.2
+    },
+    {
+        "id": 8,
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "year": 1869,
+        "genre": "Historical",
+        "summary": "A novel that chronicles the French invasion of Russia and the impact of the Napoleonic era on Tsarist society.",
+        "rating": 4.9
+    }
+
+]
